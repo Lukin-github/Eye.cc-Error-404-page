@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+body {
+  color: var(--eye-color);
+  background: url('./img/bg-img.jpg');
+  background-size: cover;
+  /*url('./img/background.svg')*/
+  /* background: linear-gradient(to top, purple, white);*/
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  margin: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+/* ------ root -------*/
+
+:root {
+  --text-font-size: 1.875rem;
+  --eye-color: #6c3483;
+  --background-color: #1b1b1b;
+}
+
+/* ---------- GENERAL DEFS ----*/
+
+/* ----------- ICON DEFS -----*/
+i {
+  font-size: 10rem;
+  text-shadow: 10px 10px 30px;
+}
+
+h1 i {
+  font-size: calc(var(--text-font-size) + 1rem);
+}
+
+/*------------ GRID stuff ---*/
+.container {
+  margin: 0 1.5rem;
+}
+.grid {
+  display: grid;
+  width: 100%;
+  gap: 2rem;
+}
+
+.eye {
+  width: auto;
+  max-width: 50rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+}
+.eye img.innerpart {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.eyeball-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 38%;
+  margin-right: 22%;
+  margin-left: 24%;
+  margin-bottom: 25%;
+
+  background: /*var(--eye-color)*/ white;
+  height: 37%;
+  width: 52%;
+
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.eyeball-fr {
+  max-width: 40%;
+  z-index: 10;
+}
+
+.teste {
+  display: inline-block;
+  background: #1b1b1b;
+  height: 250px;
+  width: 400px;
+
+  border-radius: 50%;
+}
